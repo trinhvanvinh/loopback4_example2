@@ -1,6 +1,6 @@
-import { UserRepository } from '../repositories/user.repository';
 import { Filter } from '@loopback/repository';
-import { User } from '../models/user.model';
+import { User } from '../models';
+import { UserRepository } from '../repositories';
 export declare class UserController {
     protected userRepository: UserRepository;
     constructor(userRepository: UserRepository);

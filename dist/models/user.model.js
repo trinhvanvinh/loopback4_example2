@@ -10,11 +10,24 @@ let User = class User extends repository_1.Entity {
 };
 tslib_1.__decorate([
     repository_1.property({
+        type: 'number',
+        id: true,
+    }),
+    tslib_1.__metadata("design:type", Number)
+], User.prototype, "id", void 0);
+tslib_1.__decorate([
+    repository_1.property({
         type: 'string',
-        id: true
+        required: true
     }),
     tslib_1.__metadata("design:type", String)
-], User.prototype, "id", void 0);
+], User.prototype, "title", void 0);
+tslib_1.__decorate([
+    repository_1.property({
+        type: 'string',
+    }),
+    tslib_1.__metadata("design:type", String)
+], User.prototype, "desc", void 0);
 tslib_1.__decorate([
     repository_1.property({
         type: 'string',

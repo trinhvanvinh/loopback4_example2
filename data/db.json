@@ -1,13 +1,13 @@
 {
-    "ids": {
-      "Todo": 5
-    },
-    "models": {
-      "Todo": {
-        "1": "{\"roles\":\"['1']\",\"lastName\":\"vinh1\",\"firstName\":\"trinh1\",\"email\":\"trinhvanvinh018@gmail.com\",\"title\":\"Take over the galaxy\",\"desc\":\"MWAHAHAHAHAHAHAHAHAHAHAHAHAMWAHAHAHAHAHAHAHAHAHAHAHAHA\",\"id\":1}",
-        "2": "{\"roles\":\"['2']\",\"lastName\":\"vinh2\",\"firstName\":\"trinh2\",\"email\":\"trinhvanvinh118@gmail.com\",\"title\":\"destroy alderaan\",\"desc\":\"Make sure there are no survivors left!\",\"id\":2}",
-        "3": "{\"roles\":\"['3']\",\"lastName\":\"vinh3\",\"firstName\":\"trinh3\",\"email\":\"trinhvanvinh218@gmail.com\",\"title\":\"play space invaders\",\"desc\":\"Become the very best!\",\"id\":3}",
-        "4": "{\"roles\":\"['4']\",\"lastName\":\"vinh4\",\"firstName\":\"trinh4\",\"email\":\"trinhvanvinh318@gmail.com\",\"title\":\"crush rebel scum\",\"desc\":\"Every.Last.One.\",\"id\":4}"
-      }
+  "ids": {
+    "User": 5
+  },
+  "models": {
+    "User": {
+      "1": "{\"roles\":\"1\",\"lastName\":\"vinh1\",\"firstName\":\"trinh1\",\"email\":\"trinhvanvinh018@gmail.com\",\"title\":\"Take over the galaxy\",\"desc\":\"MWAHAHAHAHAHAHAHAHAHAHAHAHAMWAHAHAHAHAHAHAHAHAHAHAHAHA\",\"id\":1}",
+      "2": "{\"roles\":\"2\",\"lastName\":\"vinh2\",\"firstName\":\"trinh2\",\"email\":\"trinhvanvinh118@gmail.com\",\"title\":\"destroy alderaan\",\"desc\":\"Make sure there are no survivors left!\",\"id\":2}",
+      "3": "{\"roles\":\"3\",\"lastName\":\"vinh3\",\"firstName\":\"trinh3\",\"email\":\"trinhvanvinh218@gmail.com\",\"title\":\"play space invaders\",\"desc\":\"Become the very best!\",\"id\":3}",
+      "4": "{\"roles\":\"4\",\"lastName\":\"vinh4\",\"firstName\":\"trinh4\",\"email\":\"trinhvanvinh318@gmail.com\",\"title\":\"crush rebel scum\",\"desc\":\"Every.Last.One.\",\"id\":4}"
     }
   }
+}

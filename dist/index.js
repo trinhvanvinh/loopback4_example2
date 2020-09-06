@@ -4,7 +4,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.main = void 0;
 const tslib_1 = require("tslib");
 const application_1 = require("./application");
+tslib_1.__exportStar(require("@loopback/rest"), exports);
 tslib_1.__exportStar(require("./application"), exports);
+tslib_1.__exportStar(require("./models"), exports);
+tslib_1.__exportStar(require("./repositories"), exports);
 async function main(options = {}) {
     const app = new application_1.Ex2Application(options);
     await app.boot();

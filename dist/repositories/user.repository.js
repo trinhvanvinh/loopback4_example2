@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserRepository = void 0;
 const tslib_1 = require("tslib");
+const core_1 = require("@loopback/core");
 const repository_1 = require("@loopback/repository");
 const models_1 = require("../models");
-const core_1 = require("@loopback/core");
 let UserRepository = class UserRepository extends repository_1.DefaultCrudRepository {
     constructor(datasource) {
         super(models_1.User, datasource);

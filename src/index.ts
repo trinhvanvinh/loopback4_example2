@@ -1,6 +1,9 @@
 import {ApplicationConfig, Ex2Application} from './application';
 
+export * from '@loopback/rest';
 export * from './application';
+export * from './models';
+export * from './repositories';
 
 export async function main(options: ApplicationConfig = {}) {
   const app = new Ex2Application(options);
@@ -37,3 +40,4 @@ if (require.main === module) {
     process.exit(1);
   });
 }
+
