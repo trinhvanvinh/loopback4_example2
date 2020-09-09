@@ -10,24 +10,11 @@ let User = class User extends repository_1.Entity {
 };
 tslib_1.__decorate([
     repository_1.property({
-        type: 'number',
+        type: 'string',
         id: true,
     }),
-    tslib_1.__metadata("design:type", Number)
+    tslib_1.__metadata("design:type", String)
 ], User.prototype, "id", void 0);
-tslib_1.__decorate([
-    repository_1.property({
-        type: 'string',
-        required: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], User.prototype, "title", void 0);
-tslib_1.__decorate([
-    repository_1.property({
-        type: 'string',
-    }),
-    tslib_1.__metadata("design:type", String)
-], User.prototype, "desc", void 0);
 tslib_1.__decorate([
     repository_1.property({
         type: 'string',
@@ -49,13 +36,25 @@ tslib_1.__decorate([
 ], User.prototype, "lastName", void 0);
 tslib_1.__decorate([
     repository_1.property({
-        type: 'array',
-        itemType: 'string'
+        type: 'number'
     }),
-    tslib_1.__metadata("design:type", Array)
+    tslib_1.__metadata("design:type", Number)
 ], User.prototype, "roles", void 0);
 User = tslib_1.__decorate([
-    repository_1.model(),
+    repository_1.model({
+        settings: {
+            indexes: {
+                uniqueEmail: {
+                    keys: {
+                        email: 1
+                    },
+                    options: {
+                        unique: true
+                    }
+                }
+            }
+        }
+    }),
     tslib_1.__metadata("design:paramtypes", [Object])
 ], User);
 exports.User = User;

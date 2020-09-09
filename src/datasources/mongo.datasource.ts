@@ -10,7 +10,7 @@ const config = {
   "port": 27017,
   "user": "",
   "password": "",
-  "database": "",
+  "database": "datatest",
   "useNewUrlParser": true,
   "useUnifiedTopology": true
 }

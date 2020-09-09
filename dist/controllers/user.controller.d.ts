@@ -5,4 +5,5 @@ export declare class UserController {
     protected userRepository: UserRepository;
     constructor(userRepository: UserRepository);
     findUsers(filter?: Filter<User>): Promise<User[]>;
+    create(newUserRequest: User): Promise<User>;
 }

@@ -1,23 +1,36 @@
 import {Entity, model, property} from '@loopback/repository';
 
-@model()
+@model({
+  settings: {
+    indexes: {
+      uniqueEmail: {
+        keys: {
+          email: 1
+        },
+        options: {
+          unique: true
+        }
+      }
+    }
+  }
+})
 export class User extends Entity {
   @property({
-    type: 'number',
+    type: 'string',
     id: true,
   })
-  id: number;
+  id: string;
 
-  @property({
-    type: 'string',
-    required: true
-  })
-  title: string;
+  // @property({
+  //   type: 'string',
+  //   required: true
+  // })
+  // title: string;
 
-  @property({
-    type: 'string',
-  })
-  desc: string
+  // @property({
+  //   type: 'string',
+  // })
+  // desc: string
 
   @property({
     type: 'string',
@@ -36,10 +49,9 @@ export class User extends Entity {
   lastName: string;
 
   @property({
-    type: 'array',
-    itemType: 'string'
+    type: 'number'
   })
-  roles: string[];
+  roles: number;
 
   constructor(data?: Partial<User>) {
     super(data);
