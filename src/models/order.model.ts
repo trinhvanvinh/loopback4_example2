@@ -1,11 +1,11 @@
 
 
-import {belongsTo, Entity, model, Order, property} from '@loopback/repository';
+import {belongsTo, Entity, model, property} from '@loopback/repository';
 import {ShoppingCartItem} from './shopping-cart-item.model';
 import {User} from './user.model';
 
 @model()
-export class Oder extends Entity {
+export class Order extends Entity {
   @property({
     type: 'string',
     id: true
