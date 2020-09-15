@@ -6,7 +6,7 @@ export class UserCredentials extends Entity {
   @property({
     type: 'string',
     id: true,
-
+    mongodb: {dataType: 'ObjectID'}
   })
   id: string;
 
@@ -19,7 +19,7 @@ export class UserCredentials extends Entity {
   @property({
     type: 'string',
     required: true,
-
+    mongodb: {dataType: 'ObjectID'}
   })
   userId: string;
 

@@ -1,4 +1,7 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, hasMany, hasOne, model, property} from '@loopback/repository';
+import {Order} from './order.model';
+import {UserCredentials} from './user-credentials.model';
+import {ShoppingCart} from './shopping-cart-model';
 
 @model({
   settings: {
@@ -37,10 +40,20 @@ export class User extends Entity {
   })
   lastName: string;
 
+  @hasMany(()=>Order)
+  orders: Order[];
+
+  @hasOne(()=>UserCredentials)
+  userCredentials: UserCredentials;
+
+  @hasOne(()=>ShoppingCart)
+  shoppingCart: ShoppingCart;
+
   @property({
-    type: 'number'
+    type: 'array',
+    itemType: 'string'
   })
-  roles: number;
+  roles: string[];
 
   constructor(data?: Partial<User>) {
     super(data);
