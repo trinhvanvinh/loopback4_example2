@@ -1691,19 +1691,54 @@
         "signature": "d3815efa19e6027ff61ff96c7c74cca6bbe5ff02d0bf9e28dfadb92b1f4c3c54",
         "affectsGlobalScope": false
       },
+      "./src/models/shopping-cart-item.model.ts": {
+        "version": "d0be630233b64c590ffeef58ec8895d34123762b5af7e4bc11a3ea9fa91da6df",
+        "signature": "bbed15fa361806a54a9c6d8d18281b7bd1a085ce88af142b43746c6eb9cddc20",
+        "affectsGlobalScope": false
+      },
+      "./src/models/order.model.ts": {
+        "version": "e36b452ae7094ff7086229111621f583aa7b407c979dd382bef95ae60b79d01b",
+        "signature": "b4c3d2df41cf721e759d9345396d55ef1eaf43a3a1ec01d22316b9ff7042d026",
+        "affectsGlobalScope": false
+      },
+      "./src/models/user-credentials.model.ts": {
+        "version": "ec9bc08ff6ce8e8e7c885d44ccb983b8acb423a71d728c46ce7422bd2b40a4d1",
+        "signature": "415e2dbe433f2df8873fb4f22497e816f5710af89e0b9b7606c428aeacb4a975",
+        "affectsGlobalScope": false
+      },
+      "./src/models/shopping-cart-model.ts": {
+        "version": "64baba10b5e24ce52dea88f64e504607d9ccd8a969c503d58b64eefdaa9c49d3",
+        "signature": "e54a7882964c41203e08649c7400c500626fdc63526e306f6931027a8825b872",
+        "affectsGlobalScope": false
+      },
       "./src/models/user.model.ts": {
-        "version": "2aaac406a3ec928ab190c33bd63be5e41b193880638fe97df7a2fe0fd4d4dcae",
-        "signature": "4d139ba87399799aa3eab622b028c2e657a5936c88a03c2df514462d5b98ba86",
+        "version": "edd0fa41dc705663cd3daecdcf91c3f09a9f286632e4ee2eeba3f28236e9ed72",
+        "signature": "5da22e08385f82ac6cfbce51da1f706fc5a2c5f5f735beda0062df384f91ca5d",
+        "affectsGlobalScope": false
+      },
+      "./src/models/product.model.ts": {
+        "version": "7f1bbbfce090b17762cc78a15a9a482074b110c0e01bcd2b0ade54440f121b80",
+        "signature": "bc0edac6873403e5f0a604219a5847219f5b2a37e42de5e8d9232222d57e9d1c",
         "affectsGlobalScope": false
       },
       "./src/models/index.ts": {
-        "version": "44b63aba38fb52e76f7d4c6ca09506a9c622bc02035751739f293d14725d0f50",
-        "signature": "44b63aba38fb52e76f7d4c6ca09506a9c622bc02035751739f293d14725d0f50",
+        "version": "c88a394fde8e186941b9692f8547d5baab47c5256f7e54c69945f8320ad4bedd",
+        "signature": "c88a394fde8e186941b9692f8547d5baab47c5256f7e54c69945f8320ad4bedd",
+        "affectsGlobalScope": false
+      },
+      "./src/repositories/order.repository.ts": {
+        "version": "c82053ba862a3d2c1e0b01f08168f65474b8ea92d5a0f143e2bf1ec1355ecfee",
+        "signature": "b518ab87c57a49bd803451e1ff20522d4af649e2834874db97fdfdeb43f4e6cc",
+        "affectsGlobalScope": false
+      },
+      "./src/repositories/user-credential.repository.ts": {
+        "version": "bfae6be72b06a75fcce67107228f6e22f733603d3d6fca09bdd4304136463ca1",
+        "signature": "51c66027166f9e5ccaeeeb8cef4fc695fb84a08edbc83377f4561e59edf74850",
         "affectsGlobalScope": false
       },
       "./src/repositories/user.repository.ts": {
-        "version": "fa974094b5dcdbc4ac5f179747e806ddeb5b42e9cd783060fff9ea6660c8bded",
-        "signature": "b05f7c08785e70ba6f57102285e9b9e6a2cd790c72738711ca731c6edacee680",
+        "version": "f033e68a676ef476616952010db1f299588b97c08f07594c952492d2d12497e4",
+        "signature": "43804a5864840c5ee9e902b51f1388ebd89d3619aeff9c2c00d68f31d2d32f7c",
         "affectsGlobalScope": false
       },
       "./src/repositories/index.ts": {
@@ -1864,6 +1899,16 @@
       "./src/datasources/index.ts": {
         "version": "07a4eb82a9b58d79011b414f9daf532576632a17c2472977a399709b99552d10",
         "signature": "d6998e5b946de1776c89f0eb0ba114fdff0591804daa5a7a6b2aeaa3923e5d47",
+        "affectsGlobalScope": false
+      },
+      "./src/repositories/product.repository.ts": {
+        "version": "dc3c71cb8770509bf6bb174247366a94e181b1105cb96e4a7d3583f04028bec1",
+        "signature": "e0869ab070683fe517b9507645b1598d88dcb03121f24f5afa3ce7acc2d9bc05",
+        "affectsGlobalScope": false
+      },
+      "./src/repositories/shopping-cart.repository.ts": {
+        "version": "ead6c7ab11f3b2dc13a28b7a5e84c7c6c7190bc9cb05af2f2f0bc9808a0d2b5a",
+        "signature": "a23740a1c0643f8846d81b8271d7deefff55ef7b6b448b37641874f31cacd89d",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/color-name/index.d.ts": {
@@ -3475,10 +3520,37 @@
         "./src/application.ts"
       ],
       "./src/models/index.ts": [
+        "./src/models/order.model.ts",
+        "./src/models/product.model.ts",
+        "./src/models/shopping-cart-item.model.ts",
+        "./src/models/shopping-cart-model.ts",
+        "./src/models/user-credentials.model.ts",
         "./src/models/user.model.ts"
       ],
-      "./src/models/user.model.ts": [
+      "./src/models/order.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/shopping-cart-item.model.ts",
+        "./src/models/user.model.ts"
+      ],
+      "./src/models/product.model.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts"
+      ],
+      "./src/models/shopping-cart-item.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts"
+      ],
+      "./src/models/shopping-cart-model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/shopping-cart-item.model.ts",
+        "./src/models/user.model.ts"
+      ],
+      "./src/models/user-credentials.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts"
+      ],
+      "./src/models/user.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/order.model.ts",
+        "./src/models/shopping-cart-model.ts",
+        "./src/models/user-credentials.model.ts"
       ],
       "./src/openapi-spec.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -3487,10 +3559,34 @@
       "./src/repositories/index.ts": [
         "./src/repositories/user.repository.ts"
       ],
-      "./src/repositories/user.repository.ts": [
+      "./src/repositories/order.repository.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
         "./node_modules/@loopback/repository/dist/index.d.ts",
         "./src/models/index.ts"
+      ],
+      "./src/repositories/product.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/datasources/index.ts",
+        "./src/models/index.ts"
+      ],
+      "./src/repositories/shopping-cart.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/datasources/index.ts",
+        "./src/models/index.ts"
+      ],
+      "./src/repositories/user-credential.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/index.ts"
+      ],
+      "./src/repositories/user.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/index.ts",
+        "./src/repositories/order.repository.ts",
+        "./src/repositories/user-credential.repository.ts"
       ],
       "./src/sequence.ts": [
         "./node_modules/@loopback/rest/dist/index.d.ts"
@@ -5022,17 +5118,63 @@
         "./src/repositories/index.ts"
       ],
       "./src/models/index.ts": [
+        "./src/models/order.model.ts",
+        "./src/models/product.model.ts",
+        "./src/models/shopping-cart-item.model.ts",
+        "./src/models/shopping-cart-model.ts",
+        "./src/models/user-credentials.model.ts",
         "./src/models/user.model.ts"
       ],
-      "./src/models/user.model.ts": [
+      "./src/models/order.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/shopping-cart-item.model.ts"
+      ],
+      "./src/models/product.model.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts"
+      ],
+      "./src/models/shopping-cart-item.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts"
+      ],
+      "./src/models/shopping-cart-model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/shopping-cart-item.model.ts"
+      ],
+      "./src/models/user-credentials.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts"
+      ],
+      "./src/models/user.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/order.model.ts",
+        "./src/models/shopping-cart-model.ts",
+        "./src/models/user-credentials.model.ts"
       ],
       "./src/repositories/index.ts": [
         "./src/repositories/user.repository.ts"
       ],
-      "./src/repositories/user.repository.ts": [
+      "./src/repositories/order.repository.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts",
         "./src/models/index.ts"
+      ],
+      "./src/repositories/product.repository.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/datasources/index.ts",
+        "./src/models/index.ts"
+      ],
+      "./src/repositories/shopping-cart.repository.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/datasources/index.ts",
+        "./src/models/index.ts"
+      ],
+      "./src/repositories/user-credential.repository.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/index.ts"
+      ],
+      "./src/repositories/user.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/index.ts",
+        "./src/repositories/order.repository.ts",
+        "./src/repositories/user-credential.repository.ts"
       ],
       "./src/sequence.ts": [
         "./node_modules/@loopback/rest/dist/index.d.ts"
@@ -5415,9 +5557,18 @@
       "./src/index.ts",
       "./src/migrate.ts",
       "./src/models/index.ts",
+      "./src/models/order.model.ts",
+      "./src/models/product.model.ts",
+      "./src/models/shopping-cart-item.model.ts",
+      "./src/models/shopping-cart-model.ts",
+      "./src/models/user-credentials.model.ts",
       "./src/models/user.model.ts",
       "./src/openapi-spec.ts",
       "./src/repositories/index.ts",
+      "./src/repositories/order.repository.ts",
+      "./src/repositories/product.repository.ts",
+      "./src/repositories/shopping-cart.repository.ts",
+      "./src/repositories/user-credential.repository.ts",
       "./src/repositories/user.repository.ts",
       "./src/sequence.ts"
     ]

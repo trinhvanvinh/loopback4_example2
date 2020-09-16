@@ -4,7 +4,7 @@ import {inject} from '@loopback/core';
 import {MongoDataSource} from '../datasources';
 
 export class ShoppingCartRepository extends DefaultKeyValueRepository<ShoppingCart>{
-  constructor(@inject('datasource.mongo') dataSource: MongoDataSource) {
+  constructor(@inject('datasources.mongo') dataSource: MongoDataSource) {
     super(ShoppingCart, dataSource);
   }
 }

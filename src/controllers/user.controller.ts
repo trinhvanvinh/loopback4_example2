@@ -1,16 +1,18 @@
-import {Filter, repository} from '@loopback/repository';
-import {get, getModelSchemaRef, param, post, requestBody} from '@loopback/rest';
+import {Filter, model, property, repository} from '@loopback/repository';
+import {get, getModelSchemaRef, param, post, requestBody, put} from '@loopback/rest';
 import {User} from '../models';
 import {UserRepository} from '../repositories';
+import {inject} from '@loopback/testlab';
 
-// @model()
-// export class NewUserRequest extends User {
-//     @property({
-//         type: 'string',
-//         required: true
-//     })
-//     password: string
-// }
+
+@model()
+export class NewUserRequest extends User {
+    @property({
+        type: 'string',
+        required: true
+    })
+    password: string
+}
 
 export class UserController {
     constructor(
@@ -67,10 +69,10 @@ export class UserController {
         newUserRequest: User
     ): Promise<User> {
 
-        //newUserRequest.roles = ['customer'];
+        newUserRequest.roles = ['customer'];
 
         // encrypt the password
-        //const password = await newUserRequest.password;
+        const password =  "123456";
 
         try {
             // create new User
@@ -78,7 +80,7 @@ export class UserController {
                 newUserRequest
             )
 
-            //await this.userRepository.create({password});
+            await this.userRepository.userCredentials(savedUser.id).create({password})
 
 
             return savedUser;
@@ -87,6 +89,31 @@ export class UserController {
             throw error;
         }
 
+    }
+
+    @put('/users/{userId}', {
+        responses: {
+            '200': {
+                description: 'User',
+                content:{
+                    'application/json':{
+                        schema: {
+                            'x-ts-type': User
+                        }
+                    }
+                }
+            }
+        }
+    })
+    async set(
+
+      @requestBody({description: 'update user'}) user: User,
+      @param.path.string('userId') userId: string,
+
+
+    ): Promise<void>{
+        const updateUser = await this.userRepository.updateById(userId, user);
+        return updateUser;
     }
 
 }
